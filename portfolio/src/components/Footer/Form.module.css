@@ -1,0 +1,117 @@
+.overlayContact {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(248, 242, 242, 0.747);
+  overflow-y: hidden;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.overlayFormContent {
+  top: 10%;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.overlayFormContent input {
+  padding: 8px;
+  font-size: 25px;
+  transition: 0.3s;
+  margin-right: 5%;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+/* ::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 25px;
+  padding: 1px;
+} */
+.overlayFormContent a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+.overlayFormContent .closebtn-contact {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.formSection {
+  width: 40%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background-color: #414a6b;
+}
+
+.formSection input {
+  width: 250px;
+  height: 25px;
+  text-align: left;
+  color: white;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-family: "Oswald", sans-serif;
+}
+
+.formSection button {
+  width: 50%;
+  height: 50px;
+  background-color: #f1f1f1;
+  color: #414a6b;
+  margin-top: 10px;
+  outline: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.inputSections {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.submit {
+  width: 50%;
+  height: 0px;
+  background-color: green;
+  color: #414a6b;
+  margin-top: 10px;
+  outline: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.submit:hover {
+  background-color: #414a6b;
+  color: #f1f1f1;
+}
+.submit:active {
+  background-color: #f1f1f1;
+  color: #414a6b;
+}
+
+.formSection textarea {
+  background-color: #f1f1f1;
+  font-family: "Oswald", sans-serif;
+  color: #414a6b;
+  font-size: 16px;
+}
+
+.formSectiontextarea::placeholder {
+  color: #414a6b;
+}

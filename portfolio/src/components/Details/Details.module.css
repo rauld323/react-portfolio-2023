@@ -1,0 +1,87 @@
+#aboutMe {
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.aboutPadding {
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutHead1 {
+  font-size: 90px;
+  margin-bottom: -40px;
+}
+
+.aboutHead2 {
+  margin-top: 90px;
+}
+
+.aboutParagraph {
+  width: 270px;
+  margin-top: 60px;
+}
+
+.techContent {
+  width: 50%;
+}
+
+.techBox {
+  height: 550px;
+  width: 100%;
+  background-color: black;
+  -webkit-box-shadow: -16px 3px 25px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -16px 3px 25px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: -16px 3px 25px -6px rgba(0, 0, 0, 0.75);
+}
+
+/* Inner Tech box Section */
+.techBox {
+  display: flex;
+  justify-content: baseline;
+  flex-flow: row wrap;
+  background-color: gainsboro;
+}
+
+.techBox1 {
+  background-color: black;
+  width: 50%;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.techBox1 li {
+  padding: 0.5rem;
+}
+.techBox2 li {
+  padding: 0.5rem;
+}
+.techBox2 {
+  background-color: black;
+  width: 50%;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #aboutMe {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .aboutPadding {
+    width: 100%;
+    margin-bottom: 75px;
+  }
+  .techContent {
+    width: 100%;
+  }
+}
