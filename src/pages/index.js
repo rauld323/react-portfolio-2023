@@ -6,7 +6,9 @@ export default function Home() {
       <Header />
       <Intro />
       <Details />
-      <Projects />
+      <Projects image={"./images/address.png"} showSectionTitle />
+      <Projects image={"./images/api.png"} imageOnTheRight />
+      <Projects image={"./images/blog.png"} />
 
       <link
         rel="stylesheet"
