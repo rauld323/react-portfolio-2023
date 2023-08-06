@@ -1,4 +1,4 @@
-import { Header, Intro, Details, Projects } from './sharedComponents';
+import { Header, Intro, Details, Projects, Footer } from './sharedComponents';
 
 export default function Home() {
   return (
@@ -6,9 +6,12 @@ export default function Home() {
       <Header />
       <Intro />
       <Details />
-      <Projects image={"./images/address.png"} showSectionTitle />
-      <Projects image={"./images/api.png"} imageOnTheRight />
-      <Projects image={"./images/blog.png"} />
+
+      <Projects image={"./images/address.png"} showSectionTitle gitHubLink={"https://github.com/rauld323/address-book"} />
+      <Projects image={"./images/api.png"} imageOnTheRight gitHubLink={"https://github.com/rauld323/api-landing-page"} />
+      <Projects image={"./images/blog.png"} gitHubLink={"https://github.com/rauld323/react-ufo-blog"} />
+
+      <Footer />
 
       <link
         rel="stylesheet"

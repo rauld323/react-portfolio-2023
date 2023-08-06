@@ -1,9 +1,7 @@
 #aboutMe {
-  height: 150vh;
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
-  /* justify-content: center; need it for lower resoultion screens*/
+  margin: 100px 0;
 }
 
 .aboutPadding {
@@ -72,4 +70,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  #aboutMe {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .aboutPadding {
+    width: 100%;
+    margin-bottom: 75px;
+  }
+  .techContent {
+    width: 100%;
+  }
 }

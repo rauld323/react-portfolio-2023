@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Projects.module.css";
 
-const Projects = ({ image, showSectionTitle, imageOnTheRight }) => {
+const Projects = ({ image, showSectionTitle, imageOnTheRight, gitHubLink }) => {
   return (
     <section id={styles.project1}>
-      <div class={styles.paralaxContainerLeft}>
+      <div className={styles.paralaxContainerLeft}>
         {showSectionTitle && (
           <div>
             <div>
@@ -22,15 +22,14 @@ const Projects = ({ image, showSectionTitle, imageOnTheRight }) => {
           </div>
         )}
 
-        <div class={styles.paralaxSection2}>
+        <div className={styles.paralaxSection2}>
           <div
+            className={styles.projectImage}
             style={{
-              width: "50%",
-              display: "flex",
               order: imageOnTheRight ? 1 : 0,
             }}
           >
-            <img class={styles.parallax} src={image} alt={image} />
+            <img className={styles.parallax} src={image} alt={image} />
           </div>
 
           <div class={styles.paralaxInfo}>
@@ -47,10 +46,7 @@ const Projects = ({ image, showSectionTitle, imageOnTheRight }) => {
               the DOM.
             </p>
             <div class="links">
-              <a
-                href="https://github.com/rauld323/address-book"
-                target="_blank"
-              >
+              <a href={gitHubLink} target="_blank">
                 <em>GitHub</em>
               </a>
               <a href="#">

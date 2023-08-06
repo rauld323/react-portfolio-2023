@@ -24,6 +24,7 @@ const Details = () => {
           </p>
         </div>
       </div>
+
       <div class={styles.techContent}>
         <div class={styles.techBox}>
           <div class={styles.techBox1}>

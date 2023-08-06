@@ -1,11 +1,12 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import styles from "./Intro.module.css";
+import { gsap } from "gsap";
 
 const Intro = () => {
   return (
     <section id={styles.intro}>
-      <div class={styles.side1}>
-        <p class={styles.introParagraph}>
+      <div className={styles.side1}>
+        <p id="side1" className={styles.introParagraph}>
           Raul Davila
           <br />
           Frontend Developer:
@@ -17,13 +18,13 @@ const Intro = () => {
           to put my skills into practice while helping your company reach new
         </p>
       </div>
-      <div class={styles.floatIntro}>
+      {/* <div class={styles.floatIntro}>
         <h1>
           WEL
           <br />
           COME.
         </h1>
-      </div>
+      </div> */}
       <div class={styles.side2}></div>
     </section>
   );
