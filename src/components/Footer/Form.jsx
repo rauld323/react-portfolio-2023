@@ -10,17 +10,13 @@ const Form = () => {
     >
       <div className={styles.overlayFormContent}>
         <form
+          className={styles.formSection}
           action="https://formspree.io/f/mzbygdjk"
           method="post"
-          className={styles.formSection}
         >
-          <div className={styles.inputSections} id="ove">
+          <div className={styles.inputSections}>
             <input type="text" name="name" placeholder="Name" required />
-            <br />
-            <br />
             <input type="email" name="email" placeholder="Email" required />
-            <br />
-            <br />
             <input
               // style="margin-bottom: 15px;"
               type="text"
@@ -35,10 +31,10 @@ const Form = () => {
               required
               placeholder="What's the Beef?"
             />
+            <button type="submit" value="submit">
+              Submit
+            </button>
           </div>
-          <button className={styles.submit} type="submit" value="submit">
-            Submit
-          </button>
         </form>
       </div>
     </div>

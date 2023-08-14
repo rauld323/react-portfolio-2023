@@ -1,10 +1,10 @@
-import { Header, Intro, Details, Projects, Footer } from './sharedComponents';
+import { Header, Introduction, Details, Projects, Footer } from './sharedComponents';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Intro />
+      <Introduction />
       <Details />
 
       <Projects image={"./images/address.png"} showSectionTitle gitHubLink={"https://github.com/rauld323/address-book"} />

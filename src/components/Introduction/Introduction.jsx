@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
 import styles from "./Intro.module.css";
-import { gsap } from "gsap";
 
-const Intro = () => {
+const Introduction = () => {
   return (
     <section id={styles.intro}>
       <div className={styles.side1}>
@@ -25,9 +23,9 @@ const Intro = () => {
           COME.
         </h1>
       </div> */}
-      <div class={styles.side2}></div>
+      <div className={styles.side2}></div>
     </section>
   );
 };
 
-export default Intro;
+export default Introduction;

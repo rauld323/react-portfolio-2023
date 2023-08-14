@@ -1,34 +1,19 @@
-#contact button {
-  background-color: white;
-  color: #414a6b;
-  height: 69%;
-  width: 28%;
-}
-#contact button:hover {
-  background-color: #414a6b;
-  color: #f1f1f1;
-}
-#contact button:active {
-  background-color: #f1f1f1;
-  color: #414a6b;
-}
-
-.form {
+.footer {
   height: 100px;
   background-color: #414a6b;
   justify-content: center;
   display: flex;
   flex-flow: row wrap;
 }
-.form h1 {
+.footer h1 {
   color: white;
 }
-.form span {
+.footer span {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.form button {
+.footer button {
   width: 100px;
   height: 25px;
   background-color: white;

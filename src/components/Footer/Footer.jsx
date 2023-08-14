@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className={styles.form} id="form">
+    <footer className={styles.footer} id="form">
       <h1>
         LETS GET IN CONTACT <em>!</em>
       </h1>
