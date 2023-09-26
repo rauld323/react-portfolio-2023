@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from "./Projects.module.css";
 import { formatDescription } from "../../helpers/formatDescription";
@@ -31,6 +32,11 @@ const Projects = ({
               >
                 OJECTS.
               </h1>
+              <h1
+                style={{ fontFamily: "Signika, sans-serif", fontSize: "75px" }}
+              >
+                ‾‾‾‾‾‾‾‾‾‾‾‾‾
+              </h1>
             </div>
           </div>
         )}
@@ -53,7 +59,11 @@ const Projects = ({
             {key}
             {gitHubLink !== "" ? (
               <div class="links">
-                <a href={gitHubLink} target="_blank">
+                <a
+                  href={gitHubLink}
+                  target="_blank"
+                  style={{ marginRight: "10px" }}
+                >
                   <em>GitHub</em>
                 </a>
                 <a href={liveLink} target="_blank">
