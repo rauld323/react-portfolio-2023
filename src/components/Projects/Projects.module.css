@@ -44,10 +44,10 @@
   .paralaxSection2 {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
   }
   .paralaxInfo {
     width: 80%;
+    margin-top: 60px;
   }
   .parallax {
     width: 100%;

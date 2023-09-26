@@ -1,6 +1,8 @@
 import { Header, Introduction, Details, Projects, Footer } from './sharedComponents';
 import projects from '../data/Projects.json';
 
+
+
 export default function Home() {
   return (
     <>

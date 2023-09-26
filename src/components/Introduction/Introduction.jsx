@@ -1,4 +1,5 @@
 import styles from "./Intro.module.css";
+import Script from "next/script";
 
 const Introduction = () => {
   return (
@@ -16,14 +17,17 @@ const Introduction = () => {
           to put my skills into practice while helping your company reach new
         </p>
       </div>
-      {/* <div class={styles.floatIntro}>
-        <h1>
+
+      <div className={styles.side2}>
+        <h1 className={styles.greeting}>
           WEL
           <br />
           COME.
         </h1>
-      </div> */}
-      <div className={styles.side2}></div>
+      </div>
+      <Script src="./intro.js" />
+      <Script src="node_modules/gsap/dist/gsap.js" />
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" />
     </section>
   );
 };
