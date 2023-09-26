@@ -1,4 +1,5 @@
 import { Header, Introduction, Details, Projects, Footer } from './sharedComponents';
+import projects from '../data/Projects.json';
 
 export default function Home() {
   return (
@@ -6,13 +7,10 @@ export default function Home() {
       <Header />
       <Introduction />
       <Details />
+      {projects.map((project, i) => <Projects key={i} image={project.image} title={project.title} gitHubLink={project.github_link} liveLink={project.live_link} techUsed={project.tech_used} description={project.description} imageOnTheRight={project.imagePosition} projectNumber={project.project_number} />)}
 
-      <Projects image={"./images/address.png"} showSectionTitle gitHubLink={"https://github.com/rauld323/address-book"} />
-      <Projects image={"./images/api.png"} imageOnTheRight gitHubLink={"https://github.com/rauld323/api-landing-page"} />
-      <Projects image={"./images/blog.png"} gitHubLink={"https://github.com/rauld323/react-ufo-blog"} />
 
       <Footer />
-
       <link
         rel="stylesheet"
         type="text/css"
@@ -28,7 +26,5 @@ export default function Home() {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       /></>
-
-
   );
 }

@@ -1,0 +1,43 @@
+[
+  {
+    "title": "dsadsdas",
+    "tech_used": "TypeScript/React, JavaScript, D3, CSS, HTML, Styled Components",
+    "description": "▪ Produced an address book application that allowed users to create, find and delete contacts ▪ Employing the JQuery library I was able add dynamic elements to the DOM",
+    "live_link": "",
+    "github_link": "https://github.com/rauld323/bakery-data-visual",
+    "image": "./images/bakeryPrediction.png",
+    "imagePosition": true,
+    "project_number": 1
+  },
+  {
+    "title": "Address Book",
+    "tech_used": "JQuery, DOM, JS, HTML, CSS",
+    "live_link": "http://localhost:3000/#",
+    "github_link": "https://github.com/rauld323/address-book",
+    "description": "▪ Produced an address book application that allowed users to create, find and delete contacts. ▪ Employing the JQuery library I was able add dynamic elements to the DOM.",
+    "image": "./images/address.png",
+    "imagePosition": false,
+    "project_number": 2
+  },
+
+  {
+    "title": "Short API",
+    "tech_used": "JQuery, DOM, JS, API, HTML CSS",
+    "description": "▪ Created a landing page that can cut URL length to a fraction using the shrtAPI. ▪ Designed an interface that displayed results dynamically.",
+    "live_link": "",
+    "github_link": "https://github.com/rauld323/api-landing-page",
+    "image": "./images/api.png",
+    "imagePosition": true,
+    "project_number": 3
+  },
+  {
+    "title": "Alien Blog",
+    "tech_used": "React, JavaScript, HTML, CSS, Express, Node, RestAPI, MongoDB",
+    "live_link": "",
+    "github_link": "https://github.com/rauld323/react-ufo-blog",
+    "description": "▪ Developed a full stack project using React for frontend and Node for Backend. ▪ Using Multer and Mongoose, the app is able to dynamically upload images, a form and new blogs.",
+    "image": "./images/blog.png",
+    "imagePosition": false,
+    "project_number": 4
+  }
+]
