@@ -17,14 +17,8 @@ const Form = () => {
           <div className={styles.inputSections}>
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
-            <input
-              // style="margin-bottom: 15px;"
-              type="text"
-              placeholder="Subject"
-              required
-            />
+            <input type="text" placeholder="Subject" required />
             <textarea
-              // style="outline: none;"
               name="textarea"
               cols="40"
               rows="10"
