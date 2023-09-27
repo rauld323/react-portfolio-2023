@@ -64,7 +64,14 @@ const Projects = ({
                 >
                   <em>GitHub</em>
                 </a>
-                <a href={liveLink} target="_blank">
+                <a
+                  href={liveLink}
+                  target="_blank"
+                  style={{
+                    pointerEvents: liveLink === null ? "none" : "",
+                    color: liveLink === null ? "gray" : "",
+                  }}
+                >
                   <em>Live</em>
                 </a>
               </div>
