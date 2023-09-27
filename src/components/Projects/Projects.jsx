@@ -4,7 +4,6 @@ import styles from "./Projects.module.css";
 import { formatDescription } from "../../helpers/formatDescription";
 
 const Projects = ({
-  key,
   image,
   imageOnTheRight,
   gitHubLink,
@@ -51,14 +50,13 @@ const Projects = ({
             <img className={styles.parallax} src={image} alt={image} />
           </div>
 
-          <div class={styles.paralaxInfo}>
+          <div className={styles.paralaxInfo}>
             <h1 style={{ fontFamily: "Montserrat, sans-serif" }}>{title}</h1>
             <p>{techUsed}</p>
 
             {projectDescription}
-            {key}
             {gitHubLink !== "" ? (
-              <div class="links">
+              <div className="links">
                 <a
                   href={gitHubLink}
                   target="_blank"

@@ -5,6 +5,7 @@ const Form = () => {
   return (
     <StyledOverlay>
       <StyledForm action="https://formspree.io/f/mzbygdjk" method="post">
+        <h1>Contact</h1>
         <StyledInputs>
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />
