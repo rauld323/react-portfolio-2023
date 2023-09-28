@@ -1,11 +1,11 @@
-import styles from "./Intro.module.css";
 import Script from "next/script";
+import styled from "styled-components";
 
 const Introduction = () => {
   return (
-    <section id={styles.intro}>
-      <div className={styles.side1}>
-        <p id="side1" className={styles.introParagraph}>
+    <StyledSection>
+      <StyledLeftBox>
+        <StyledIntroParagraph>
           Raul Davila
           <br />
           Frontend Developer:
@@ -15,21 +15,73 @@ const Introduction = () => {
           interactive elements to increase user engagement when working with web
           application. Currently, I am looking for a position that will allow me
           to put my skills into practice while helping your company reach new
-        </p>
-      </div>
+        </StyledIntroParagraph>
+      </StyledLeftBox>
 
-      <div className={styles.side2}>
-        <h1 className={styles.greeting}>
+      <StyledRightBox>
+        <StyledGreeting>
           WEL
           <br />
           COME.
-        </h1>
-      </div>
+        </StyledGreeting>
+      </StyledRightBox>
       <Script src="./intro.js" />
       <Script src="node_modules/gsap/dist/gsap.js" />
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" />
-    </section>
+    </StyledSection>
   );
 };
 
 export default Introduction;
+
+const StyledSection = styled.section`
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 50px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
+
+const StyledLeftBox = styled.div`
+  background-color: #414a6b;
+  height: 92vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    order: 2;
+    font-size: max(5vw, 10px);
+  }
+`;
+
+const StyledRightBox = styled.div`
+  background-color: #f8f8f8;
+  height: 92vh;
+  width: 50%;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    font-size: max(5vw, 50px);
+  }
+`;
+
+const StyledIntroParagraph = styled.p`
+  text-align: center;
+  font-size: 20px;
+  color: #f8f8f8;
+  padding-right: 10%;
+  padding-left: 10%;
+`;
+
+const StyledGreeting = styled.h1`
+  background-color: transparent;
+`;
