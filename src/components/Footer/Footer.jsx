@@ -15,7 +15,7 @@ const Footer = () => {
         LETS GET IN CONTACT <em>!</em>
       </h1>
       <StyledButtonSection>
-        <button onClick={handleClick}>Cool</button>
+        <StyledButton onClick={console.log("here")}>Message</StyledButton>
         {isOpen && <Form />}
       </StyledButtonSection>
     </StyledFooter>
@@ -44,9 +44,12 @@ const StyledButtonSection = styled.span`
 
 const StyledButton = styled.button`
   width: 100px;
-  height: 25px;
+  height: 30px;
   background-color: white;
   color: #414a6b;
-  outline: none;
+  outline: solid black 1px;
   justify-content: center;
+  border-radius: 5px;
+  font-family: Signika, sans-serif;
+  font-size: 15px;
 `;
