@@ -1,7 +1,20 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Projects.module.css";
 
-const Projects = ({ image, showSectionTitle, imageOnTheRight, gitHubLink }) => {
+interface IProjectProps {
+  image: string;
+  showSectionTitle?: boolean;
+  imageOnTheRight?: boolean;
+  gitHubLink: string;
+  title: string;
+}
+
+const Projects: FC<IProjectProps> = ({
+  image,
+  showSectionTitle,
+  imageOnTheRight,
+  gitHubLink,
+}) => {
   return (
     <section id={styles.project1}>
       <div className={styles.paralaxContainerLeft}>
@@ -32,7 +45,7 @@ const Projects = ({ image, showSectionTitle, imageOnTheRight, gitHubLink }) => {
             <img className={styles.parallax} src={image} alt={image} />
           </div>
 
-          <div class={styles.paralaxInfo}>
+          <div className={styles.paralaxInfo}>
             <h1 style={{ fontFamily: "Montserrat, sans-serif" }}>
               Address Book
             </h1>
@@ -45,7 +58,7 @@ const Projects = ({ image, showSectionTitle, imageOnTheRight, gitHubLink }) => {
               ▪ Employing the JQuery library I was able add dynamic elements to
               the DOM.
             </p>
-            <div class="links">
+            <div className="links">
               <a href={gitHubLink} target="_blank">
                 <em>GitHub</em>
               </a>

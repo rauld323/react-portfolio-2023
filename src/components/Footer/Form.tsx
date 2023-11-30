@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Form.module.css";
 
 const Form = () => {
@@ -30,8 +29,8 @@ const Form = () => {
             <textarea
               // style="outline: none;"
               name="textarea"
-              cols="40"
-              rows="10"
+              cols={40}
+              rows={10}
               required
               placeholder="What's the Beef?"
             />
